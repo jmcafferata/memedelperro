@@ -25,7 +25,7 @@ def webhook(request):
         if update.message.text:
 
             # Si nos dice "nuevo", arrancan las instrucciones
-            if update.message.text == 'nuevo':
+            if update.message.text.lower() == 'nuevo':
 
                 bot.sendMessage(chat_id,'Para armar el meme del perro, tenés que mandar un mensaje con cuatro partes.\nEscribí "1." seguido del nombre del perro grande.\n"2." seguido de lo que dice el perro grande.\n"3." seguido del nombre del perro chico.\n"4." seguido de lo que dice el perro chico.\nEjemplo:\n1. Escritores antes 2. Prendan fuego toda mi obra 3. Escritores ahora 4. No me pirateen el PDF')
 
