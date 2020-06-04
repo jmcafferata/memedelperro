@@ -1,0 +1,4 @@
+# requirements.txt
+pillow==7.1.2
+requests==2.23.0
+python-telegram-bot==12.7
